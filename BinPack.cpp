@@ -39,7 +39,7 @@ int main()
     int userInput = 0;
     do
     {
-        string question = "\n1.	Run test cases from data.txt file\n2.	Create and run 25 random test cases\n3.	Exit the program";
+        string question = "\n1.	Run test cases from bin.txt file\n2.	Create and run 25 random test cases\n3.	Exit the program";
 
         if (inputValidInt(question, userInput))
         {
@@ -320,7 +320,7 @@ void createTestCases()
         testCases << items << endl;
         for (size_t j = 0; j < items; j++)
         {
-            testCases << 1 + (rand() % cap) << " ";
+            testCases << (rand() % cap + 1) << " ";
         }
         testCases << endl;
     }
