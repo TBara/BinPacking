@@ -141,7 +141,7 @@ int bestFit(bin bin)
         }
         else // Assign the item to best bin
         {
-            binSpace[binIdx] -= bin.weights[i];
+            binSpace[binIdx] = binSpace[binIdx] - bin.weights[i];
         }
     }
     return result;
